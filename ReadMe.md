@@ -1,21 +1,14 @@
-# Genesys Workshop Template
-
-This repository contains the template for workshop content associated with [Genesys Samples](https://github.com/genesys-samples) GitHub organization. We are leveraging the open-source framework, [Hugo](https://gohugo.io/), as our static site generator and [Learn](https://learn.netlify.app/) as our theme.
+# Genesys and Google - Agent Assist and DialogFlow CX Workshop
 
 ## Prerequisites
 
-If you are developing workshop content you will need to copy the contents of this repository and merge this into your repository. You will also need to have Hugo installed.
+- Genesys Cloud org & user with master admin privileges
+- Google Cloud Platform account
+- Installed the Agent Assist integration from AppFoundry
+- Installed the DialogFlow CX integration from AppFoundry
 
-### Install Hugo
+## Description
+In this workshop, we will see the power of Genesys Cloud CX and Google CCAI. We will set up both integrations with Google Agent Assist and Google DialogFlow CX into your own Genesys Cloud CX instance. 
 
-macOS: `brew install hugo`
+This will be a follow along type workshop. 
 
-Windows: `choco install hugo -confirm`
-
-### Start Hugo locally
-
-`hugo server -D`
-
-### View site locally
-
-Visit http://localhost:1313/ to see the site.
