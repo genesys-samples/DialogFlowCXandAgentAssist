@@ -1,10 +1,10 @@
 ---
-title: "First Lesson"
+title: "Integration Setup"
 chapter: false
-weight: 10
+weight: 20
 ---
 
-## Configure Workshop
+## Advanced Lesson
 
 1. Step one
 
