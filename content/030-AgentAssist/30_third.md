@@ -1,7 +1,7 @@
 ---
-title: "Second Lesson"
+title: "Adding Your Knowledge Articles to Google Cloud Storage"
 chapter: false
-weight: 20
+weight: 30
 ---
 
 ## Advanced Lesson

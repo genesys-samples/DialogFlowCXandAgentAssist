@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "DialogFlow CX"
 chapter: true
 weight: 20
 ---

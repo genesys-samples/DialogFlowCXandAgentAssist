@@ -15,3 +15,9 @@ In this workshop, you will learn all about the Genesys and Google partnership. S
 - Build DialogFlow CX bot and use in Architect flows
 - Set up Agent Assist integration with Google CCAI
 - Configure Agent Assist Conversation profile in Google Cloud Platform
+
+### Prerequisites
+- Genesys Cloud org & user with master admin privileges
+- Google Cloud Platform account
+- Installed the Agent Assist integration from AppFoundry
+- Installed the DialogFlow CX integration from AppFoundry
