@@ -19,8 +19,15 @@ Reference page - https://cloud.google.com/dialogflow/cx/docs/basics
 
 
 ## Building a DialogFlow CX Agent
+Today we're going to build a virtual agent for a candy shop. The candy shop is hoping to use DialogFlow CX to accomplish two items: 1. Allow customers to place orders & 2. Give out store hours. Let's get to work! 
 
-1. Navigate to the Google CCAI Console & ensure that you are in the project that you created in the previous section. 
+- Navigate to the Google CCAI Console & ensure that you are in the project that you created in the previous section. 
     - https://dialogflow.cloud.google.com/cx/projects
-2. If you receive this prompt when you navigate to the link, just enable the API.
+- If you receive this prompt when you navigate to the link, just enable the API.
 ![EnableAPI](/images/EnableAPI.jpg)
+- Create a new agent and give it a descriptive name like "Candy Shop Bot"
+- The first task we will do is edit the Default Welcome Intent. Click on the start button in the middle of the page and then on Default Welcome Intent. Under fulfillment, let's delete the default phrases and add our own; "Thanks for chatting with the candy shop. How can we help you?" Be sure to click save. 
+![Candy Shop Hello](/images/candyShopHello.jpg)
+- Before we move to the next step, let's go over the Test Agent tool. In the top right, click test agent. If you say hello, you should get back the response we just created!
+![Test Agent](/images/testAgent.jpg)
+- Next we are going to create our intents & pages...
