@@ -19,7 +19,7 @@ Reference page - https://cloud.google.com/dialogflow/cx/docs/basics
 
 
 ## Building a DialogFlow CX Agent
-Today we're going to build a virtual agent for a candy shop. The candy shop is hoping to use DialogFlow CX to accomplish two items: 1. Allow customers to place orders & 2. Give out store hours. Let's get to work! 
+Today we're going to build a virtual agent for a candy shop. The candy shop is hoping to use DialogFlow CX to accomplish two items: 1. Allow customers to place orders & 2. Give out store hours. Let's get to work! Try to follow along with either the steps below or watch the video at the bottom of this page.
 
 - Navigate to the Google CCAI Console & ensure that you are in the project that you created in the previous section. 
     - https://dialogflow.cloud.google.com/cx/projects
@@ -30,4 +30,34 @@ Today we're going to build a virtual agent for a candy shop. The candy shop is h
 ![Candy Shop Hello](/images/candyShopHello.jpg)
 - Before we move to the next step, let's go over the Test Agent tool. In the top right, click test agent. If you say hello, you should get back the response we just created!
 ![Test Agent](/images/testAgent.jpg)
-- Next we are going to create our intents & pages...
+- Now we are going to create a couple of intents and pages. You can create intents two ways; either from the manage tab or inline. We'll show you both ways. Pages can either be created from the build tab or inline. We will first create an intent using the manage tab and a page using the build tab.
+    - Select the manage tab > intents > create
+    - Name this intent store.hours
+    - Enter at least 5 training phrases. Here's two examples.
+        - When is your store open? 
+        - What are your hours?
+        - Be sure to press save after adding your training phrases
+    - Navigate back to the build tab and then click the + sign to create a new page named "Hours"
+    - Hover over the newly created Hours page and click the 3 dots and then Edit
+        - Edit the fulfillment field and then input some text describing your candy shops store hours. For example, "Our shop is open Monday through Saturday from 11am to 9pm."
+        - Be sure to press save on both the fulfillment and the page. 
+    - Navigate back to the Default Start Flow and then press the Start block
+        - Create a new route and choose store.hours from the intent drop down and under the transition section choose the Hours page. 
+- Now we are going to create an intent and a page using the inline functionality
+    - Click the start block under the Default Start Flow and then the + to add a new route
+    - In the intent drop down list click + new Intent, which will allow you to create a new intent directly from here
+    ![Inline New Intent](/images/inlineNewIntent.jpg)
+        - Name your new intent "Order Candy" and add some training phrases of what a customer might say if they want to order candy. Under training phrases, add the following sentences
+            - order some gumdrops
+            - place a new order
+            - i want candy
+            - i want 500 suckers
+            - i'd like to buy 10 jawbreakers
+        - You should notice that a parameter is automatically created when putting in your training phrases. Google is recognizing based on your inputted training phrases that you are going to need to gather the quantity of candies as a parameter for this intent. We'll get more into adding parameters here in just a little bit.
+        ![Parameter Autopopulate](/images/parameterAutopopulate.jpg)
+    - While still editing the route, navigate down to the transition section and now let's create a new page using inline functionality. 
+    ![Inline New Page](/images/inlineNewPage.jpg)
+        - name this page "New Order" and then save your route
+- Quick check in - at this point, your graphical editor should look like this. 
+![Graphical Editor Check In](/images/graphicalEditorCheckIn.jpg)
+- Next we need to add parameters to our New Order page...
