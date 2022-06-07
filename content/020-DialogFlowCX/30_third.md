@@ -89,3 +89,5 @@ We also can use the test agent tool. Go through this conversation with the bot.
 
 If your conversation worked, congrats! You've just created a candy shop bot.
 
+If you wish to watch a video of all the steps above, navigate to this link. https://youtu.be/I103nKWivG8 
+
