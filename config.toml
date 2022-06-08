@@ -64,7 +64,7 @@ languageName = "Français"
 
 [[menu.shortcuts]] 
 name = "<i class='fas fa-graduation-cap'></i> Genesys Workshops"
-url = "https://genesys-samples.github.io/"
+url = "https://workshop.genesys.com/"
 weight = 10
 
 [[menu.shortcuts]]
