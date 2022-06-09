@@ -44,3 +44,5 @@ jobs:
           inlineScript: |
             az storage blob delete-batch --account-name 'genesyssamples' --source '$web' --pattern 'workshops/${{ github.event.repository.name }}/*'
             az storage blob upload-batch --account-name 'genesyssamples' --source ./public --destination '$web/workshops/${{ github.event.repository.name }}'
+            
+    
