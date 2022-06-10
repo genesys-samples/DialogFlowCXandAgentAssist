@@ -75,10 +75,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/020-dialogflowcx/40_fourth.html</guid>
-      <description>Advanced Lesson   Step one
-  Step two
-  Step three
-  </description>
+      <description>Invoking the DialogFlow CX Agent in an Architect Flow We&amp;rsquo;re on to the final step. Now that the DialogFlow CX Agent is complete, we can now call it in an architect flow. This will truly complete our end to end integration from Google to Genesys with all the capabilities of Google DialogFlow CX and Genesys Cloud CX Architect available for our candy shop. We&amp;rsquo;re going to make this rather simple for today&amp;rsquo;s purposes.</description>
     </item>
     
     <item>
