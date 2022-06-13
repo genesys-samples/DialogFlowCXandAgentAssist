@@ -50,4 +50,4 @@ We're on to the final step. Now that the DialogFlow CX Agent is complete, we can
         - You: "Talk to an agent"
     - This will then send the interaction back to architect and route to our queue! You should then be able to handle the interaction from the interaction pane by going on queue and accepting the interaction. 
 
-    - You can also watch a video of these steps...
+    - You can also watch a video of these steps here https://youtu.be/AoCeX5RjT0Y
