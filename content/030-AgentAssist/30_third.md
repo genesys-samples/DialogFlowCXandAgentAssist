@@ -4,10 +4,5 @@ chapter: false
 weight: 30
 ---
 
-## Advanced Lesson
+## Adding Your Knowledge Articles to Google Cloud Storage
 
-1. Step one
-
-2. Step two
-
-3. Step three
