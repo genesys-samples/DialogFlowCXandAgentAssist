@@ -20,3 +20,6 @@ weight: 20
 6. Click save to automatically trigger allow-listing for the Google Cloud platform project. The allow listing process can take up to 48 hours, but the Genesys Cloud onboarding team will inform you when the request executes successfully. 
     - In other words, wait. Once you get the notification that the request is successful, you can then activate the integration and then continue on with this workshop. 
     - If you wait for more than 72 hours and you haven't been notified that the request was successful, please reach out to Travis Coleman at travis.coleman@genesys.com with your org ID and region. 
+
+
+If you wish to watch a video of these steps, follow this link: https://youtu.be/u-M6HkNf758
