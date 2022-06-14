@@ -4,7 +4,7 @@ chapter: true
 weight: 30
 ---
 
-## Getting Started
+## Agent Assist
 
 {{% children showhidden="false" %}}
 

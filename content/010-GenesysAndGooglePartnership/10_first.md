@@ -24,7 +24,7 @@ Google CCAI Virtual Agent comes in two forms: DialogFlow CX (advanced), and Dial
 Google CCAI Agent Assist provides three key capabilities. 
 1. Recommend phrases used by high performing agents to improve the quality and consistency of customer experience
 2. Agents can be suggested knowledge base content in regards to a customers issue
-3. Transcribes calls in real time for agents to referecne during the call or after for analysis
+3. Transcribes calls in real time for agents to reference during the call or after for analysis
 
 ## Insights
 CCAI Insights is the one component of Google CCAI that does not have a prebuilt integration with Genesys Cloud CX. With that being said, there is nothing stopping a customer from using the Genesys Cloud API's to pass interaction data over to Google CCAI Insights. Insights also is going to be beneficial if a customer is using either the DialogFlow CX or Agent Assist integration because customers can get relevant analtyics data about their Google resources that they built for those integrations. 
