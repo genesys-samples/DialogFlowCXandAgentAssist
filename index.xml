@@ -30,10 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/030-agentassist/20_second.html</guid>
-      <description>Advanced Lesson   Step one
-  Step two
-  Step three
-  </description>
+      <description>Integration Setup  Create a project and a service account in your Google Cloud Platform console  You can also use the project that you created in the DialogFlow CX section of this workshop. Just create a new service account within that project.   Enable in your project the &amp;ldquo;Dialogflow API&amp;rdquo; and the &amp;ldquo;Data Labeling API&amp;rdquo;  https://cloud.google.com/dialogflow/es/docs/quick/setup#api https://cloud.google.com/ai-platform/data-labeling/docs/before-you-begin   Navigate to the Dialogflow console for your project and then upgrade to the Pay as You Go DialogFlow Essentials Package  https://dialogflow.</description>
     </item>
     
     <item>
@@ -42,10 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/030-agentassist/30_third.html</guid>
-      <description>Advanced Lesson   Step one
-  Step two
-  Step three
-  </description>
+      <description>Adding Your Knowledge Articles to Google Cloud Storage </description>
     </item>
     
     <item>

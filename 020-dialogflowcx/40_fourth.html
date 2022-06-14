@@ -11,22 +11,22 @@
     <title>Invoking the DialogFlow CX Agent in an Architect Flow :: Documentation for Hugo Learn Theme</title>
 
     
-    <link href="../css/nucleus.css?1655150584" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1655150584" rel="stylesheet">
-    <link href="../css/hybrid.css?1655150584" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1655150584" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1655150584" rel="stylesheet">
-    <link href="../css/auto-complete.css?1655150584" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1655150584" rel="stylesheet">
-    <link href="../css/theme.css?1655150584" rel="stylesheet">
-    <link href="../css/tabs.css?1655150584" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1655150584" rel="stylesheet">
+    <link href="../css/nucleus.css?1655230200" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1655230200" rel="stylesheet">
+    <link href="../css/hybrid.css?1655230200" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1655230200" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1655230200" rel="stylesheet">
+    <link href="../css/auto-complete.css?1655230200" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1655230200" rel="stylesheet">
+    <link href="../css/theme.css?1655230200" rel="stylesheet">
+    <link href="../css/tabs.css?1655230200" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1655230200" rel="stylesheet">
     
-    <link href="../css/theme-mine.css?1655150584" rel="stylesheet">
+    <link href="../css/theme-mine.css?1655230200" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1655150584"></script>
+    <script src="../js/jquery-3.3.1.min.js?1655230200"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1655150584"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1655150584"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1655230200"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1655230200"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1655150584"></script>
+<script type="text/javascript" src="../js/search.js?1655230200"></script>
 
     
   </div>
@@ -581,31 +581,21 @@
 </li>
 <li>Navigate back to architect (you may need to press save and then refresh the screen since we just made changes to our DialogFlow CX Agent)
 <ul>
-<li>
-<p>Back in your Dialogflow CX bot block, add some output under the Live Agent Handoff Metadata section. The key name should match the key name that we created in the previous step. For variable name, set a name to be referenced from within Architect.
-<img src="../images/architectLiveAgentHandoff.jpg" alt="Architect Live Agent Handoff"></p>
-</li>
-<li>
-<p>Under the success route in architect, drag a decision block and let&rsquo;s make a decision on if our variable for intent equals LiveAgent (hint: if you named your intent something different in Google, you&rsquo;ll need to try to match that name in Architect)
-<img src="../images/intentDecision.jpg" alt="Intent Decision"></p>
-</li>
-<li>
-<p>If this decision evaluates to yes, then transfer to a queue that you are a member of. Lastly, add a disconnect to the bottom of the flow and then publish!
-<img src="../images/finalArchitectFlow.jpg" alt="Final Architect Flow"></p>
-</li>
-<li>
-<p>Now let&rsquo;s test this! You&rsquo;ll need to create a web messenger configuration and deployment. That isn&rsquo;t the lesson of today&rsquo;s workshop so if you don&rsquo;t already have this set up in your org follow the instructions below.</p>
+<li>Back in your Dialogflow CX bot block, add some output under the Live Agent Handoff Metadata section. The key name should match the key name that we created in the previous step. For variable name, set a name to be referenced from within Architect.
+<img src="../images/architectLiveAgentHandoff.jpg" alt="Architect Live Agent Handoff"></li>
+<li>Under the success route in architect, drag a decision block and let&rsquo;s make a decision on if our variable for intent equals LiveAgent (hint: if you named your intent something different in Google, you&rsquo;ll need to try to match that name in Architect)
+<img src="../images/intentDecision.jpg" alt="Intent Decision"></li>
+<li>If this decision evaluates to yes, then transfer to a queue that you are a member of. Lastly, add a disconnect to the bottom of the flow and then publish!
+<img src="../images/finalArchitectFlow.jpg" alt="Final Architect Flow"></li>
+<li>Now let&rsquo;s test this! You&rsquo;ll need to create a web messenger configuration and deployment. That isn&rsquo;t the lesson of today&rsquo;s workshop so if you don&rsquo;t already have this set up in your org follow the instructions below.
 <ul>
 <li>Configuration - <a href="https://help.mypurecloud.com/articles/configure-messenger/">https://help.mypurecloud.com/articles/configure-messenger/</a></li>
 <li>Deployment - <a href="https://help.mypurecloud.com/articles/deploy-messenger/">https://help.mypurecloud.com/articles/deploy-messenger/</a></li>
 </ul>
 </li>
-<li>
-<p>Last step! Navigate to our web messenger developer tools in the developer center and choose your deployment you created. <a href="https://developer.genesys.cloud/devapps/web-chat-messenger">https://developer.genesys.cloud/devapps/web-chat-messenger</a>
-<img src="../images/webMessagingTool.jpg" alt="Web Messaging Tool"></p>
-</li>
-<li>
-<p>Go through this conversation.</p>
+<li>Last step! Navigate to our web messenger developer tools in the developer center and choose your deployment you created. <a href="https://developer.genesys.cloud/devapps/web-chat-messenger">https://developer.genesys.cloud/devapps/web-chat-messenger</a>
+<img src="../images/webMessagingTool.jpg" alt="Web Messaging Tool"></li>
+<li>Go through this conversation.
 <ul>
 <li>You: &ldquo;Hello!&rdquo;</li>
 <li>Bot: &ldquo;Thanks for chatting with the candy shop. How can we help you?&rdquo;</li>
@@ -620,15 +610,11 @@
 <li>You: &ldquo;Talk to an agent&rdquo;</li>
 </ul>
 </li>
-<li>
-<p>This will then send the interaction back to architect and route to our queue! You should then be able to handle the interaction from the interaction pane by going on queue and accepting the interaction.</p>
+<li>This will then send the interaction back to architect and route to our queue! You should then be able to handle the interaction from the interaction pane by going on queue and accepting the interaction.</li>
+</ul>
 </li>
-<li>
+</ul>
 <p>You can also watch a video of these steps here <a href="https://youtu.be/AoCeX5RjT0Y">https://youtu.be/AoCeX5RjT0Y</a></p>
-</li>
-</ul>
-</li>
-</ul>
 
 
 <footer class="footline">
@@ -898,19 +884,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1655150584"></script>
-    <script src="../js/perfect-scrollbar.min.js?1655150584"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1655150584"></script>
-    <script src="../js/jquery.sticky.js?1655150584"></script>
-    <script src="../js/featherlight.min.js?1655150584"></script>
-    <script src="../js/highlight.pack.js?1655150584"></script>
+    <script src="../js/clipboard.min.js?1655230200"></script>
+    <script src="../js/perfect-scrollbar.min.js?1655230200"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1655230200"></script>
+    <script src="../js/jquery.sticky.js?1655230200"></script>
+    <script src="../js/featherlight.min.js?1655230200"></script>
+    <script src="../js/highlight.pack.js?1655230200"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1655150584"></script>
-    <script src="../js/learn.js?1655150584"></script>
-    <script src="../js/hugo-learn.js?1655150584"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1655230200"></script>
+    <script src="../js/learn.js?1655230200"></script>
+    <script src="../js/hugo-learn.js?1655230200"></script>
     
         
-            <script src="../mermaid/mermaid.js?1655150584"></script>
+            <script src="../mermaid/mermaid.js?1655230200"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

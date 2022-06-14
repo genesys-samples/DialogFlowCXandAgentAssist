@@ -11,22 +11,22 @@
     <title>Integration Setup :: Documentation for Hugo Learn Theme</title>
 
     
-    <link href="../css/nucleus.css?1655150584" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1655150584" rel="stylesheet">
-    <link href="../css/hybrid.css?1655150584" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1655150584" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1655150584" rel="stylesheet">
-    <link href="../css/auto-complete.css?1655150584" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1655150584" rel="stylesheet">
-    <link href="../css/theme.css?1655150584" rel="stylesheet">
-    <link href="../css/tabs.css?1655150584" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1655150584" rel="stylesheet">
+    <link href="../css/nucleus.css?1655230200" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1655230200" rel="stylesheet">
+    <link href="../css/hybrid.css?1655230200" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1655230200" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1655230200" rel="stylesheet">
+    <link href="../css/auto-complete.css?1655230200" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1655230200" rel="stylesheet">
+    <link href="../css/theme.css?1655230200" rel="stylesheet">
+    <link href="../css/tabs.css?1655230200" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1655230200" rel="stylesheet">
     
-    <link href="../css/theme-mine.css?1655150584" rel="stylesheet">
+    <link href="../css/theme-mine.css?1655230200" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1655150584"></script>
+    <script src="../js/jquery-3.3.1.min.js?1655230200"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1655150584"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1655150584"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1655230200"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1655230200"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1655150584"></script>
+<script type="text/javascript" src="../js/search.js?1655230200"></script>
 
     
   </div>
@@ -525,7 +525,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#advanced-lesson">Advanced Lesson</a></li>
+    <li><a href="#integration-setup">Integration Setup</a></li>
   </ul>
 </nav>
     </div>
@@ -550,18 +550,37 @@
         
 
 
-<h2 id="advanced-lesson">Advanced Lesson</h2>
+<h2 id="integration-setup">Integration Setup</h2>
 <ol>
-<li>
-<p>Step one</p>
+<li>Create a project and a service account in your Google Cloud Platform console
+<ul>
+<li>You can also use the project that you created in the DialogFlow CX section of this workshop. Just create a new service account within that project.</li>
+</ul>
 </li>
-<li>
-<p>Step two</p>
+<li>Enable in your project the &ldquo;Dialogflow API&rdquo; and the &ldquo;Data Labeling API&rdquo;
+<ul>
+<li><a href="https://cloud.google.com/dialogflow/es/docs/quick/setup#api">https://cloud.google.com/dialogflow/es/docs/quick/setup#api</a></li>
+<li><a href="https://cloud.google.com/ai-platform/data-labeling/docs/before-you-begin">https://cloud.google.com/ai-platform/data-labeling/docs/before-you-begin</a></li>
+</ul>
 </li>
-<li>
-<p>Step three</p>
+<li>Navigate to the Dialogflow console for your project and then upgrade to the Pay as You Go DialogFlow Essentials Package
+<ul>
+<li><a href="https://dialogflow.cloud.google.com/#/agent/$%7Byour-project-id%7D">https://dialogflow.cloud.google.com/#/agent/${your-project-id}</a>
+<img src="../images/payAsYouGo.jpg" alt="Pay as you Go"></li>
+</ul>
+</li>
+<li>Install the Agent Assist with Google Cloud integration into your Genesys Cloud CX admin console
+<img src="../images/agentAssistIntegration.jpg" alt="Agent Assist Integration"></li>
+<li>Edit the integration and add the Project ID to the properties tab
+<img src="../images/addProjectID.jpg" alt="Add Project ID"></li>
+<li>Click save to automatically trigger allow-listing for the Google Cloud platform project. The allow listing process can take up to 48 hours, but the Genesys Cloud onboarding team will inform you when the request executes successfully.
+<ul>
+<li>In other words, wait. Once you get the notification that the request is successful, you can then activate the integration and then continue on with this workshop.</li>
+<li>If you wait for more than 72 hours and you haven&rsquo;t been notified that the request was successful, please reach out to Travis Coleman at <a href="mailto:travis.coleman@genesys.com">travis.coleman@genesys.com</a> with your org ID and region.</li>
+</ul>
 </li>
 </ol>
+<p>If you wish to watch a video of these steps, follow this link: <a href="https://youtu.be/u-M6HkNf758">https://youtu.be/u-M6HkNf758</a></p>
 
 
 <footer class="footline">
@@ -831,19 +850,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1655150584"></script>
-    <script src="../js/perfect-scrollbar.min.js?1655150584"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1655150584"></script>
-    <script src="../js/jquery.sticky.js?1655150584"></script>
-    <script src="../js/featherlight.min.js?1655150584"></script>
-    <script src="../js/highlight.pack.js?1655150584"></script>
+    <script src="../js/clipboard.min.js?1655230200"></script>
+    <script src="../js/perfect-scrollbar.min.js?1655230200"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1655230200"></script>
+    <script src="../js/jquery.sticky.js?1655230200"></script>
+    <script src="../js/featherlight.min.js?1655230200"></script>
+    <script src="../js/highlight.pack.js?1655230200"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1655150584"></script>
-    <script src="../js/learn.js?1655150584"></script>
-    <script src="../js/hugo-learn.js?1655150584"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1655230200"></script>
+    <script src="../js/learn.js?1655230200"></script>
+    <script src="../js/hugo-learn.js?1655230200"></script>
     
         
-            <script src="../mermaid/mermaid.js?1655150584"></script>
+            <script src="../mermaid/mermaid.js?1655230200"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
