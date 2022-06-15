@@ -15,5 +15,5 @@ A few important notes about uploading the knowledge articles:
 3. FAQs must be .csv files and match the format described in the Google documentation linked here. https://cloud.google.com/dialogflow/es/docs/how/knowledge-bases#supported-content 
 
 ## Download These Files
-1. Knowledge Articles
-    - 
+Navigate to this github repository and follow the directions on that page. Then return back to this workhsop. 
+https://github.com/TravisC1720/KnowledgeArticlesForWorkshop 
