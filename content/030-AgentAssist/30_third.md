@@ -21,12 +21,11 @@ https://github.com/TravisC1720/KnowledgeArticlesForWorkshop
 ## Add Your Knowledge Articles to Google Cloud Storage
 1. Navigate in your Google Cloud Platform to Cloud Storage.
 ![Cloud Storage](/images/cloudStorage.jpg) 
-2. Create a bucket with a descriptive name
+2. Create a bucket with a descriptive name. Optionally, you can also create a folder structure in the bucket to organize your files.
 ![Create Bucket](/images/createBucket.jpg)
-3. Upload the HTML files that you downloaded from the github repo into the bucket. Optionally, you can also create a folder structure in the bucket to organize your files.
-    - Note: no need to worry about the CSV file yet, just upload the HTML files.
+3. Upload the 3 HTML files and the 1 CSV file that you downloaded from the github repo into the bucket. 
 ![Upload Files](/images/uploadFiles.jpg)
 4. Copy the URI's of all the knowledge documents into a notepad for later reference
 ![Copy URI](/images/copyURI.jpg)
 
-You can also watch a video of the steps above here https://youtu.be/MnDfARbh20c
+You can also watch a video of the steps above here https://youtu.be/_NIJrpfH68E
