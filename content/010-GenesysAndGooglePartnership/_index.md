@@ -24,4 +24,4 @@ So that's the future. If you're more concerned with what's happening today, we'v
 And of course, what we are covering today...
 
 - Google DialogFlow CX
-- Genesys Agent Assist powered by Google CCAI
+- Genesys Agent Assist with Google Cloud
