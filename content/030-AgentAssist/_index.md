@@ -1,10 +1,10 @@
 ---
-title: "Agent Assist with Google Cloud"
+title: "Genesys Agent Assist Powered by Google Cloud CCAI"
 chapter: true
 weight: 30
 ---
 
-## Agent Assist with Google Cloud
+## Genesys Agent Assist Powered by Google Cloud CCAI
 
 {{% children showhidden="false" %}}
 

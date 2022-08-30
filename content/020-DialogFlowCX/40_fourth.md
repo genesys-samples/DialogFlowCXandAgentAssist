@@ -1,20 +1,20 @@
 ---
-title: "Invoking the DialogFlow CX Agent in an Architect Flow"
+title: "Invoking the Dialogflow CX Agent in an Architect Flow"
 chapter: false
 weight: 40
 ---
 
-## Invoking the DialogFlow CX Agent in an Architect Flow
-We're on to the final step. Now that the DialogFlow CX Agent is complete, we can now call it in an architect flow. This will truly complete our end to end integration from Google to Genesys with all the capabilities of Google DialogFlow CX and Genesys Cloud CX Architect available for our candy shop. We're going to make this rather simple for today's purposes. Please follow along. 
+## Invoking the Dialogflow CX Agent in an Architect Flow
+We're on to the final step. Now that the Dialogflow CX Agent is complete, we can now call it in an architect flow. This will truly complete our end to end integration from Google Cloud to Genesys with all the capabilities of Google Cloud Dialogflow CX and Genesys Cloud CX Architect available for our candy shop. We're going to make this rather simple for today's purposes. Please follow along. 
 
 - Open up Architect in your Genesys Cloud CX application and navigate to create a new message flow. Give it a descriptive name and click create. 
 ![Create Message Flow](/images/createMessageFlow.jpg)
-- In the intial state block, drag a "Call DialogFlow CX Bot" Block into the beginning of the state. From the drop down list, choose the Agent that we just created.
-![DialogFlowCX Architect Block](/images/dialogFlowCXArchitectBlock.jpg)
-- Now we will get the parameter data from the DialogFlow CX session. 
-    - In the same block, under session parameters, add two outputs. Name the ouputs Candy and Quantity since those were the parameter names we created on the Google side. Assign those parameters variable names that way we can leverage them in our architect flow.
+- In the intial state block, drag a "Call Dialogflow CX Bot" Block into the beginning of the state. From the drop down list, choose the Agent that we just created.
+![DialogflowCX Architect Block](/images/DialogflowCXArchitectBlock.jpg)
+- Now we will get the parameter data from the Dialogflow CX session. 
+    - In the same block, under session parameters, add two outputs. Name the ouputs Candy and Quantity since those were the parameter names we created on the Google Cloud side. Assign those parameters variable names that way we can leverage them in our architect flow.
     ![Architect Parameters](/images/architectParameters.jpg)
-- At this point, we realize that we want to add an option for a customer to talk to a live human. Let's go back into the DialogFlow CX agent that we created before and add a new route from the start block. 
+- At this point, we realize that we want to add an option for a customer to talk to a live human. Let's go back into the Dialogflow CX agent that we created before and add a new route from the start block. 
     - Using the inline functionality we learned about before, create a new intent named LiveAgent with some training phrases that are applicable. 
     ![Live Agent Intent](/images/liveAgentIntent.jpg)
     - While still working within that route add a new dialogue option under fulfillment. Choose "live agent handoff" as the type and then add this text to the body.
@@ -22,12 +22,12 @@ We're on to the final step. Now that the DialogFlow CX Agent is complete, we can
 "Intent": "LiveAgent"
 }
 ![Live Agent Handoff](/images/liveAgentHandoff.jpg)
-    - While still editing that route, make the transition to a new page and set that page as End Session. End session will allow us to exit the DialogFlow CX agent and pass back to architect.
+    - While still editing that route, make the transition to a new page and set that page as End Session. End session will allow us to exit the Dialogflow CX agent and pass back to architect.
     ![End Session](/images/endSession.jpg)
-- Navigate back to architect (you may need to press save and then refresh the screen since we just made changes to our DialogFlow CX Agent) 
+- Navigate back to architect (you may need to press save and then refresh the screen since we just made changes to our Dialogflow CX Agent) 
     - Back in your Dialogflow CX bot block, add some output under the Live Agent Handoff Metadata section. The key name should match the key name that we created in the previous step. For variable name, set a name to be referenced from within Architect. 
     ![Architect Live Agent Handoff](/images/architectLiveAgentHandoff.jpg)
-    - Under the success route in architect, drag a decision block and let's make a decision on if our variable for intent equals LiveAgent (hint: if you named your intent something different in Google, you'll need to try to match that name in Architect)
+    - Under the success route in architect, drag a decision block and let's make a decision on if our variable for intent equals LiveAgent (hint: if you named your intent something different in Google Cloud, you'll need to try to match that name in Architect)
     ![Intent Decision](/images/intentDecision.jpg)
     - If this decision evaluates to yes, then transfer to a queue that you are a member of. Lastly, add a disconnect to the bottom of the flow and then publish!
     ![Final Architect Flow](/images/finalArchitectFlow.jpg)
