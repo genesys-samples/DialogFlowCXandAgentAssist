@@ -1,4 +1,4 @@
-# Genesys and Google - Agent Assist and DialogFlow CX Workshop
+# Genesys and Google Cloud - Agent Assist and DialogFlow CX Workshop
 
 ## Prerequisites
 
