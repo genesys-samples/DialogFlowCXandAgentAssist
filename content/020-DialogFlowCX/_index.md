@@ -1,10 +1,10 @@
 ---
-title: "DialogFlow CX"
+title: "Dialogflow CX"
 chapter: true
 weight: 20
 ---
 
-## DialogFlow CX
+## Dialogflow CX
 
 {{% children showhidden="false" %}}
 

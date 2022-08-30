@@ -1,10 +1,10 @@
 ---
-title: "Building a DialogFlow CX Agent"
+title: "Building a Dialogflow CX Agent"
 chapter: false
 weight: 30
 ---
 ## Terminology
-- Agents - Agent is DialogFlow's term for bot. An agent is a natural language understanding module that understands the nuances of human language. You design and build a Dialogflow agent to handle the types of conversations required for your system.
+- Agents - Agent is Dialogflow's term for bot. An agent is a natural language understanding module that understands the nuances of human language. You design and build a Dialogflow agent to handle the types of conversations required for your system.
 - Flows - Used to define topics and the associated conversational paths. Here's an example of different flows that might be built for a pizza delivery agent.
 ![Pizza Delivery Flows](/images/PizzaDeliveryFlows.jpg)
 - Pages - Pages are configured to collect information from the end user that is relevant for the conversational state represented by the page. See the below example of different pages in blue that might be used for a Food Order flow. 
@@ -15,14 +15,14 @@ weight: 30
 - Fulfillment - Fulfillment enables the virtual agent to respond to the end users question, query for information, or terminate a session. It is possible to call mutiple fulfillments during one turn.
 - State Handlers - Used to control the conversation by creating responses for end users and/or by transitioning the current page.
 
-Reference page - https://cloud.google.com/dialogflow/cx/docs/basics 
+Reference page - https://cloud.Google Cloud.com/Dialogflow/cx/docs/basics 
 
 
-## Building a DialogFlow CX Agent
-Today we're going to build a virtual agent for a candy shop. The candy shop is hoping to use DialogFlow CX to accomplish two items: 1. Allow customers to place orders & 2. Give out store hours. Let's get to work! Try to follow along with either the steps below or watch the video at the bottom of this page.
+## Building a Dialogflow CX Agent
+Today we're going to build a virtual agent for a candy shop. The candy shop is hoping to use Dialogflow CX to accomplish two items: 1. Allow customers to place orders & 2. Give out store hours. Let's get to work! Try to follow along with either the steps below or watch the video at the bottom of this page.
 
-- Navigate to the Google CCAI Console & ensure that you are in the project that you created in the previous section. 
-    - https://dialogflow.cloud.google.com/cx/projects
+- Navigate to the Google Cloud CCAI Console & ensure that you are in the project that you created in the previous section. 
+    - https://Dialogflow.cloud.Google Cloud.com/cx/projects
 - If you receive this prompt when you navigate to the link, just enable the API.
 ![EnableAPI](/images/EnableAPI.jpg)
 - Create a new agent and give it a descriptive name like "Candy Shop Bot"
@@ -54,7 +54,7 @@ Now we are going to create a couple of intents and pages. You can create intents
             - i want candy
             - i want 500 suckers
             - i'd like to buy 10 jawbreakers
-        - You should notice that a parameter is automatically created when putting in your training phrases. Google is recognizing based on your inputted training phrases that you are going to need to gather the quantity of candies as a parameter for this intent. We'll get more into adding parameters here in just a little bit.
+        - You should notice that a parameter is automatically created when putting in your training phrases. Google Cloud is recognizing based on your inputted training phrases that you are going to need to gather the quantity of candies as a parameter for this intent. We'll get more into adding parameters here in just a little bit.
         ![Parameter Autopopulate](/images/parameterAutopopulate.jpg)
     - While still editing the route, navigate down to the transition section and now let's create a new page using inline functionality. 
     ![Inline New Page](/images/inlineNewPage.jpg)
