@@ -12,7 +12,7 @@ A few important notes about uploading the knowledge articles:
     - Knowledge documents
     - FAQs
 2. Knowledge documents must be HTML files 
-3. FAQs must be .csv files and match the format described in the Google Cloud documentation linked here. https://cloud.Google Cloud.com/Dialogflow/es/docs/how/knowledge-bases#supported-content 
+3. FAQs must be .csv files and match the format described in the Google Cloud documentation linked here. https://cloud.google.com/agent-assist/docs/faq#create_a_knowledge_document
 
 ## Download These Files
 Navigate to this github repository and follow the directions on that page. Then return back to this workhsop. 

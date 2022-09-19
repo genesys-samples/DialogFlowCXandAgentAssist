@@ -20,4 +20,4 @@ In this workshop, you will learn all about the Genesys and Google Cloud partners
 - Genesys Cloud org & user with master admin privileges
 - Google Cloud Cloud Platform account
 - Installed the Genesys Agent Assist Powered by Google Cloud CCAI integration
-- Installed the Dialogflow CX integration from AppFoundry - https://help.mypurecloud.com/articles/install-the-Google Cloud-cloud-Dialogflow-cx-integration-from-genesys-appfoundry/ 
+- Installed the Dialogflow CX integration from AppFoundry - https://help.mypurecloud.com/articles/install-the-google-cloud-dialogflow-cx-integration-from-genesys-appfoundry/

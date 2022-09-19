@@ -10,7 +10,7 @@ We're on to the final step. Now that the Dialogflow CX Agent is complete, we can
 - Open up Architect in your Genesys Cloud CX application and navigate to create a new message flow. Give it a descriptive name and click create. 
 ![Create Message Flow](/images/createMessageFlow.jpg)
 - In the intial state block, drag a "Call Dialogflow CX Bot" Block into the beginning of the state. From the drop down list, choose the Agent that we just created.
-![DialogflowCX Architect Block](/images/DialogflowCXArchitectBlock.jpg)
+![DialogflowCX Architect Block](/images/dialogFlowCXArchitectBlock.jpg)
 - Now we will get the parameter data from the Dialogflow CX session. 
     - In the same block, under session parameters, add two outputs. Name the ouputs Candy and Quantity since those were the parameter names we created on the Google Cloud side. Assign those parameters variable names that way we can leverage them in our architect flow.
     ![Architect Parameters](/images/architectParameters.jpg)

@@ -8,7 +8,7 @@ weight: 40
 
 Now that we have our HTML files hosted in Google Cloud Cloud Storage, now we can create our knowledge base in the Google Cloud Cloud Agent Assist Console. Follow the steps below: 
 
-1. Navigate to the Agent Assist console and choose your project. https://agentassist.cloud.Google Cloud.com/projects 
+1. Navigate to the Agent Assist console and choose your project. https://agentassist.cloud.google.com/projects
 2. Click on data and then knowledge base and create a new knowledge base. Name the knowledge base something descriptive such as "Candy Shop"
 ![Knowledge Bases](/images/knowledgeBases.jpg)
 3. Navigate into your knowledge base and then click the Add new button to create a new article.
