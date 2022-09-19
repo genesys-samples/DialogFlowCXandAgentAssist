@@ -15,14 +15,14 @@ weight: 30
 - Fulfillment - Fulfillment enables the virtual agent to respond to the end users question, query for information, or terminate a session. It is possible to call mutiple fulfillments during one turn.
 - State Handlers - Used to control the conversation by creating responses for end users and/or by transitioning the current page.
 
-Reference page - https://cloud.Google Cloud.com/Dialogflow/cx/docs/basics 
+Reference page - https://cloud.google.com/dialogflow/cx/docs/basics
 
 
 ## Building a Dialogflow CX Agent
 Today we're going to build a virtual agent for a candy shop. The candy shop is hoping to use Dialogflow CX to accomplish two items: 1. Allow customers to place orders & 2. Give out store hours. Let's get to work! Try to follow along with either the steps below or watch the video at the bottom of this page.
 
 - Navigate to the Google Cloud CCAI Console & ensure that you are in the project that you created in the previous section. 
-    - https://Dialogflow.cloud.Google Cloud.com/cx/projects
+    - https://dialogflow.cloud.google.com/cx/projects
 - If you receive this prompt when you navigate to the link, just enable the API.
 ![EnableAPI](/images/EnableAPI.jpg)
 - Create a new agent and give it a descriptive name like "Candy Shop Bot"
