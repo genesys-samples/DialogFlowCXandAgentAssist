@@ -10,7 +10,7 @@ Here at Genesys, we have been growing our relationship with Google Cloud for som
 
 - Customer journey orchestration
 - Automated customer care with integrated IoT and customer service
-- Predictive customer satisfaction using Genesys with Google Cloud Cloud AI
+- Predictive customer satisfaction using Genesys with Google Cloud AI
 - AI-driven multi-factor authentication with geolocation verification
 - Unique conversational channels from Google Cloud Search, Google Cloud Maps and other Google Cloud services
 
