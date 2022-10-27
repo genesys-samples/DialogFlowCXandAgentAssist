@@ -18,8 +18,6 @@ So that's the future. If you're more concerned with what's happening today, we'v
 
 - Google Cloud TTS integrated into Genesys Architect
 - Google Cloud Dialogflow ES (this is the older version of Dialogflow CX)
-- Genesys MultiCloud CX hosted on Google Cloud Cloud Platform
-- Genesys MultiCloud CX Private Edition powered by Google Cloud Kubernetes Engine
 
 And of course, what we are covering today...
 
