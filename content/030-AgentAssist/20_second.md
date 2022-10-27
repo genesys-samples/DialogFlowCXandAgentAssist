@@ -8,8 +8,8 @@ weight: 20
 1. Create a project and a service account in your Google Cloud Cloud Platform console
     - You can also use the project that you created in the Dialogflow CX section of this workshop. Just create a new service account within that project.
 2. Enable in your project the "Dialogflow API" and the "Data Labeling API"
-    - https://cloud.Google Cloud.com/Dialogflow/es/docs/quick/setup#api 
-    - https://cloud.Google Cloud.com/ai-platform/data-labeling/docs/before-you-begin 
+    - https://cloud.google.com/dialogflow/es/docs/quick/setup#api
+    - https://cloud.google.com/ai-platform/data-labeling/docs/before-you-begin
 3. Navigate to the Dialogflow console for your project and then upgrade to the Pay as You Go Dialogflow Essentials Package
     - https://Dialogflow.cloud.google.com/#/agent/${your-project-id}
     ![Pay as you Go](/images/payAsYouGo.jpg)
