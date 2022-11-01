@@ -1,5 +1,5 @@
 ---
-title: "Adding Your Knowledge Articles to Google Cloud Cloud Storage"
+title: "Adding Your Knowledge Articles to Google Cloud Storage"
 chapter: false
 weight: 30
 ---

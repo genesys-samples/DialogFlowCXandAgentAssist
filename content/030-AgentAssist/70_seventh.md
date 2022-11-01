@@ -22,6 +22,8 @@ weight: 70
 ![Assign to Queues](/images/assignToQueues.jpg)
 
 ## Testing the Agent Assistant
+
+Note: You must have line recording enabled on the trunk for this to work. If you don't have that enabled, follow these steps to complete. https://help.mypurecloud.com/articles/enable-line-recording/
 We're finally at the last step, where we get to see the integration in action!
 1. There are a few prerequisites that you need to be able to test agent assist. Those are: 
     - Your user is a part of a queue (the same queue that has the Assistant assigned to it)
