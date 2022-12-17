@@ -1,18 +1,18 @@
 ---
-title: "Integration Setup"
+title: "Setup de la integración"
 chapter: false
 weight: 20
 ---
 
-## Integration Setup
+## Setup de la integración
 
-1. In the Google Cloud Cloud Platform console, create a new project and then create a service account for the project.
-    - A Google Cloud Cloud project allows you to organize all your Google Cloud Cloud resources. As an example, you might have one Google Cloud Cloud project for your marketing team and another project for your sales team. Projects simply allow you to keep resources separated. 
-    - A service account is a special type of account that is used to execute applications and run automated services. Service accounts allow you to grant permissions to different applications or resources in your Google Cloud environment. As an example, you might want a Dialogflow CX agent to have access to trigger Google Cloud Cloud Functions, but you wouldn't want them to be able to deactivate a virtual machine.
-2. Grant the following roles to the service account: "Dialogflow API Client", "Dialogflow API Reader", and "Dialogflow Conversation Manager"
-3. Create a service account key and download the JSON version of it.
-4. Go to the Genesys Cloud CX integrations page and find your Dialogflow CX integration. Within that integration, navigate to the credentials tab and click configure. 
-    - Now input the corresponding values from the JSON file that you downloaded in the previous step. 
+1. En la consola de Google Cloud Platform, cree un nuevo proyecto y, a continuación, cree una cuenta de servicio para el proyecto.
+    - Un proyecto de Google Cloud Platform le permite organizar todos sus recursos de Google Cloud Platform. Por ejemplo, puede tener un proyecto de Google Cloud Platform para su equipo de marketing y otro para su equipo de ventas. Los proyectos simplemente le permiten mantener los recursos separados. 
+    - Una cuenta de servicio es un tipo especial de cuenta que se utiliza para ejecutar aplicaciones y ejecutar servicios automatizados. Las cuentas de servicio le permiten conceder permisos a diferentes aplicaciones o recursos en su entorno de Google Cloud. Como ejemplo, es posible que desee que un agente de Dialogflow CX tenga acceso para activar las funciones de Google Cloud Cloud, pero no le gustaría que pudieran desactivar una máquina virtual.
+2. Conceda las siguientes funciones a la cuenta de servicio: "Dialogflow API Client", "Dialogflow API Reader", y "Dialogflow Conversation Manager".
+3. Cree una clave de cuenta de servicio y descargue la versión JSON de la misma.
+4. Vaya a la página de integraciones de Genesys Cloud CX y busque su integración Dialogflow CX. Dentro de esa integración, vaya a la pestaña de credenciales y haga clic en configurar. 
+    - Ahora introduzca los valores correspondientes del archivo JSON que descargó en el paso anterior. 
 
-#### Video showing the steps above
+#### Vídeo que muestra los pasos anteriores
 https://youtu.be/nvKh-yNxIKQ 

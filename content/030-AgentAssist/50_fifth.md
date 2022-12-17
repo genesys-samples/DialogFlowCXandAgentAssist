@@ -1,10 +1,10 @@
 ---
-title: "Creating the Conversation Profile"
+title: "Creación del perfil de conversación"
 chapter: false
 weight: 50
 ---
 
-## Creating the Conversation Profile
+## Creación del perfil de conversación
 
 1. Within the CCAI console, navigate to conversation profiles and click create new.
 ![Create Conversation Profile](/images/createConversationProfile.jpg)
@@ -16,3 +16,14 @@ weight: 50
 ![Integration ID](/images/integrationID.jpg)
 
 If you want to watch a video of these steps, navigate here. https://youtu.be/htWsmPSbHlY
+
+1. Dentro de la consola CCAI, navegue hasta perfiles de conversación y haga clic en crear nuevo.
+![Create Conversation Profile](/images/createConversationProfile.jpg)
+2. Ponga un nombre descriptivo y luego en Tipos de sugerencias marca la casilla tanto para "Artículos" - "Articles" como para "Preguntas frecuentes" - "FAQs"
+3. En Artículos y Preguntas frecuentes, seleccione la base de conocimientos que acabamos de crear.
+![Add Knowledge Base to Conversation Profile](/images/addKnowledgeBaseToConversationProfile.jpg)
+    - Por ahora no hay que preocuparse de ninguna otra configuración. Si desea probar algunos de los otros ajustes, puede hacerlo por su cuenta, pero no vamos a cubrirlos en este taller. 
+4. Pulse Guardar y copie el ID de integración en el portapapeles para utilizarlo en el siguiente paso. 
+![Integration ID](/images/integrationID.jpg)
+
+Si quiere ver un video de estos pasos, clic aquí. https://youtu.be/htWsmPSbHlY

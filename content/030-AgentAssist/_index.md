@@ -4,7 +4,7 @@ chapter: true
 weight: 30
 ---
 
-## Genesys Agent Assist Powered by Google Cloud CCAI
+## Genesys Agent Assist con tecnología Google Cloud CCAI
 
 {{% children showhidden="false" %}}
 
