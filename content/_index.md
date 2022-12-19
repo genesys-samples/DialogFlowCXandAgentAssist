@@ -1,23 +1,23 @@
 ---
-title: "Genesys and Google Cloud - Dialogflow CX and Genesys Agent Assist Powered by Google Cloud CCAI Workshop"
+title: "Genesys y Google Cloud - Dialogflow CX y Genesys Agent Assist Powered by Google Cloud CCAI Workshop"
 chapter: true
 weight: 1
 ---
 
-# Genesys and Google Cloud - Agent Assist and Dialogflow CX Workshop
+# Genesys y Google Cloud - Taller sobre Agent Assist y Dialogflow CX
 
-### Welcome
+### Bienvenido
 
-In this workshop, you will learn all about the Genesys and Google Cloud partnership. Specifically, we will focus on how Genesys Cloud CX and Google Cloud CCAI can become a dynamic duo! By the end of this workshop, you'll have a Dialogflow CX bot and an Agent Assist Conversation profile integrated in Genesys Cloud CX. 
+En este taller, aprenderá todo sobre la alianza de Genesys y Google Cloud. En concreto, nos centraremos en cómo Genesys Cloud CX y Google Cloud CCAI pueden convertirse en un dúo dinámico. Al final de este taller, tendrá un bot Dialogflow CX y un perfil de conversación de Agent Assist integrados en Genesys Cloud CX. 
 
-### Learning Objectives
-- Set up Dialogflow CX integration
-- Build Dialogflow CX bot and use in Architect flows
-- Set up the Genesys Agent Assist Powered by Google Cloud CCAI integration
-- Configure Agent Assist Conversation profile in Google Cloud Cloud Platform
+### Objetivos de aprendizaje
+- Configurar la integración de Dialogflow CX
+- Construir el bot Dialogflow CX y utilizarlo en los flujos Architect
+- Configurar la integración de Genesys Agent Assist Powered by Google Cloud CCAI
+- Configurar el perfil de conversación de Agent Assist en Google Cloud Cloud Platform
 
-### Prerequisites
-- Genesys Cloud org & user with master admin privileges
-- Google Cloud Cloud Platform account
-- Installed the Genesys Agent Assist Powered by Google Cloud CCAI integration
-- Installed the Dialogflow CX integration from AppFoundry - https://help.mypurecloud.com/articles/install-the-google-cloud-dialogflow-cx-integration-from-genesys-appfoundry/
+### Requisitos previos
+- Genesys Cloud org y usuario con privilegios de administrador maestro (master admin)
+- Cuenta de Google Cloud Cloud Platform
+- Instalada la integración Genesys Agent Assist Powered by Google Cloud CCAI
+- Instalada la integración Dialogflow CX de AppFoundry - https://help.mypurecloud.com/articles/install-the-google-cloud-dialogflow-cx-integration-from-genesys-appfoundry/
