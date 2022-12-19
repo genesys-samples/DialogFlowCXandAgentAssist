@@ -57,11 +57,6 @@ title = "Documentation for Hugo Learn Theme"
 weight = 1
 languageName = "English"
 
-[Languages.fr]
-title = "Documentation du thème Hugo Learn"
-weight = 2
-languageName = "Français"
-
 [[menu.shortcuts]] 
 name = "<i class='fas fa-graduation-cap'></i> Genesys Workshops"
 url = "https://workshop.genesys.com/"
