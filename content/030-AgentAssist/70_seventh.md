@@ -1,59 +1,57 @@
 ---
-title: "Creación de su Asistente de Agente en Genesys Cloud CX"
+title: "Creating your Agent Assistant in Genesys Cloud CX"
 chapter: false
 weight: 70
 ---
 
-## Creación de su Asistente de Agente (Agent Assist) en Genesys Cloud CX
-1. Navegue a su consola de administración de Genesys Cloud CX. El primer paso que debemos dar es asegurarnos de que nuestro usuario tiene los permisos correctos para añadir Asistentes de Agente. Cree un nuevo rol o edite un rol existente con los siguientes permisos. Una vez que tenga el rol, añádalo a su usuario.
-    - Asistentes > Asistente > Añadir
-    - Asistentes > Asistente > Editar
-    - Asistentes > Asistente > Ver
-    - Asistentes > Cola > Añadir
-    - Asistentes > Cola > Editar
-    - Asistentes > Cola > Ver
-    - Asistentes > Cola > Eliminar
-    - Telefonía > Plugin > Todos los permisos
-2. Es posible que tenga que actualizar la pantalla después de dar a su usuario los permisos, pero ahora debería tener un botón de Asistente bajo Contact Center en la página de administración que no estaba allí antes. Haga clic en la opción Asistente.
+## Creating your Agent Assistant in Genesys Cloud CX
+1. Navigate to your Genesys Cloud CX admin console. The first step we need to take is to be sure that our user has the correct permissions to add Agent Assistants. Either create a new role or edit an exsisting role with the following permissions. Once you have the role, add it to your user.
+    - Assistants > Assistant > Add
+    - Assistants > Assistant > Edit
+    - Assistants > Assistant > View
+    - Assistants > Queue > Add
+    - Assistants > Queue > Edit
+    - Assistants > Queue > View
+    - Assistants > Queue > Delete
+    - Telephony > Plugin > All permission
+2. You may need to refresh your screen after giving your user the permissions, but you now should have an Assistant button under Contact Center in the admin page that wasn't there before. Click on the Assistant option.
 ![Assistants Admin](/images/assistantsAdmin.jpg)
-3. Haga clic para añadir un nuevo asistente. Asigne al Asistente el nombre de "Candy Shop" y pegue el ID de integración del perfil de conversación que habíamos copiado en un paso anterior. Pulsa guardar. 
+3. Click to add a new assistant. Give the Assistant the name of "Candy Shop" and paste the conversation profile integration ID that we had copied in a previous step. Press save. 
 ![New Assistant](/images/newAssistant.jpg)
-4. Una vez pulses guardar, aparecerá una nueva pestaña en la parte superior para que asignes este asistente a colas. Asigna este asistente a una cola de la que forme parte tu usuario, así podremos probar lo que hemos construido.
+4. Once you press save, a new tab will appear up top for you to assign this assistant to queues. Assign this assistant to a queue that your user is apart of that way we can test what we have built.
 ![Assign to Queues](/images/assignToQueues.jpg)
 
-## Probar el Asistente de Agente (Agent Assist)
+## Testing the Agent Assistant
 
-Nota: Debe tener la grabación de línea habilitada en la troncal para que esto funcione. Si no lo tiene habilitado, siga estos pasos para completarlo. https://help.mypurecloud.com/articles/enable-line-recording/
-Finalmente estamos en el último paso, ¡donde podemos ver la integración en acción!
-1. Hay algunos prerrequisitos que necesita para poder probar Agent Assist. Estos son: 
-    - Su usuario forma parte de una cola (la misma cola que tiene asignado el Asistente)
+Note: You must have line recording enabled on the trunk for this to work. If you don't have that enabled, follow these steps to complete. https://help.mypurecloud.com/articles/enable-line-recording/
+We're finally at the last step, where we get to see the integration in action!
+1. There are a few prerequisites that you need to be able to test agent assist. Those are: 
+    - Your user is a part of a queue (the same queue that has the Assistant assigned to it)
         - https://help.mypurecloud.com/articles/create-queue/ 
-    - Su usuario tiene los permisos adecuados para manejar una interacción de voz y un teléfono asignado a ellos   
-        - El "Genesys Cloud User" (También puede llamarse PureCloud User) debería darle los permisos adecuados
+    - Your user has the proper permissions to handle a voice interaction and a phone assigned to them   
+        - The "Genesys Cloud User" (May also be called PureCloud User) should give you the proper permissions
         - https://help.mypurecloud.com/articles/configure-the-genesys-cloud-webrtc-phone/ 
-            - Nota: es posible que su org ya tenga creada la configuración base
-    - Usted tiene un flujo de architect que transfiere a la cola a la cual está asignado
+            - hint: your org may already have base settings created
+    - You have an architect flow that transfer to the queue that you are assigned to
         - https://help.mypurecloud.com/articles/create-call-flow/
-    - Tiene una ruta de llamada configurada que conecta un número de teléfono con el flujo de arquitecto que transfiere a su cola.
+    - You have a call route set up that connects a phone number to the architect flow that transfers to your queue
         - https://help.mypurecloud.com/articles/add-a-call-route/
-
-
-2. Ahora es el momento de ponerse el sombrero de agente y probar el asistente que acabamos de crear. Primero navegue hasta el panel de Interacciones y luego vaya a "En cola"
+2. Now it is time to put on your agent hat and test the assistant we just created. First navigate to the Interactions pane and then go "On Queue"
 ![On Queue](/images/onQueue.jpg)
-3. Llame al número asignado a la ruta de llamada que conecta con su flujo de architect y consiga que la llamada se transfiera a su cola. Acepte la interacción. 
-    - Sugerencia: es posible que desee silenciar al agente. La proximidad de los altavoces de su teléfono móvil y de su teléfono webRTC puede provocar eco. 
+3. Call the number assigned to the call route that connects to your architect flow and gets the call to transfer to your queue. Accept the interaction. 
+    - Hint: You might want to mute the agent leg. The close proximity of both the speakers from your cell phone and your webRTC phone can cause an echo. 
     ![Mute](/images/mute.jpg)
-4. Haga clic en el control de llamadas del asistente y abra también la sección de transcripción.
+4. Click on the Assistant call control and then open up the transcription section as well.
 ![Assistant Call Control](/images/assistantCallControl.jpg)
-5. En el teléfono desde el que está llamando haga las siguientes preguntas y confirme que el Asistente de Agente está sugiriendo los artículos correctos o FAQs. Ayude también a entrenar al Asistente marcando los artículos/FAQ relevantes o irrelevantes a medida que vayan apareciendo.
-    - Empecemos con las FAQ. Como cliente, pregunte lo siguiente 
-        - "¿Cuándo está abierta su tienda?" 
-        - "¿Ofrecen dulces veganos?" 
-        - ¿Cuál es el dulce más popular? 
-    - Ahora a los artículos de conocimiento (estos los seleccionará en el enlace y le abrirá otra pestaña)
-        - "Quiero comprobar el estado de mi entrega"
-        - "Necesito presentar una reclamación"
-        - "Tengo un pedido especial"
+5. On the phone that you are calling from ask the following questions and confirm that Agent Assist is sufarcing the correct articles or FAQs. Also help train the Assistant by marking the articles/FAQ's either relevant or irrelevant as they surface.
+    - Let's start with the FAQ's. As the customer, ask the following: 
+        - "When is your store open?" 
+        - "Do you offer vegan candy?" 
+        - "What is your most popular candy?" 
+    - Now to the knowledge articles (these you will click the link and it'll open another tab)
+        - "I want to check my delivery status"
+        - "I need to file a complaint"
+        - "I have a special order"
         ![Mark Relevant](/images/markRelevant.jpg)
 
-Si quiere ver un video de los pasos de esta sección clic aquí. https://youtu.be/7pw1l1o8om4
+If you want to watch a video of the steps in this section navigate here. https://youtu.be/7pw1l1o8om4

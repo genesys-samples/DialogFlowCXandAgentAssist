@@ -1,25 +1,25 @@
 ---
-title: "Configuración de la integración"
+title: "Integration Setup"
 chapter: false
 weight: 20
 ---
 
-## Configuración de la integración
-1. Cree un proyecto y una cuenta de servicio en su consola de Google Cloud Cloud Platform.
-    - También puede utilizar el proyecto que creó en la sección Dialogflow CX de este taller. Solo tiene que crear una nueva cuenta de servicio dentro de ese proyecto.
-2. Habilite en su proyecto la "API de Dialogflow" y la "API de etiquetado de datos"
+## Integration Setup
+1. Create a project and a service account in your Google Cloud Cloud Platform console
+    - You can also use the project that you created in the Dialogflow CX section of this workshop. Just create a new service account within that project.
+2. Enable in your project the "Dialogflow API" and the "Data Labeling API"
     - https://cloud.google.com/dialogflow/es/docs/quick/setup#api
     - https://cloud.google.com/ai-platform/data-labeling/docs/before-you-begin
-3. Navegue a la consola Dialogflow para su proyecto y luego actualice al paquete Dialogflow Essentials Pay as You Go
+3. Navigate to the Dialogflow console for your project and then upgrade to the Pay as You Go Dialogflow Essentials Package
     - https://Dialogflow.cloud.google.com/#/agent/${your-project-id}
     ![Pay as you Go](/images/payAsYouGo.jpg)
-4. Instale la integración de Agent Assist con Google Cloud en su consola de administración de Genesys Cloud CX
+4. Install the Agent Assist with Google Cloud Cloud integration into your Genesys Cloud CX admin console
 ![Agent Assist Integration](/images/agentAssistIntegration.jpg)
-5. Edite la integración y añada el ID de proyecto a la pestaña de propiedades
+5. Edit the integration and add the Project ID to the properties tab
 ![Add Project ID](/images/addProjectID.jpg)
-6. Haga clic en Guardar para activar automáticamente la inclusión en la lista permitida del proyecto de la plataforma Google Cloud. El proceso de inclusión en la lista de permitidos puede tardar hasta 48 horas, pero el equipo de incorporación de Genesys Cloud le informará cuando la solicitud se ejecute correctamente. 
-    - En otras palabras, espere. Una vez que reciba la notificación de que la solicitud se ha realizado correctamente, podrá activar la integración y continuar con este taller. 
-    - Si espera más de 72 horas y no ha recibido la notificación de que la solicitud se ha realizado correctamente, póngase en contacto con workshops@genesys.com indicando su ID de organización y región. 
+6. Click save to automatically trigger allow-listing for the Google Cloud Cloud platform project. The allow listing process can take up to 48 hours, but the Genesys Cloud onboarding team will inform you when the request executes successfully. 
+    - In other words, wait. Once you get the notification that the request is successful, you can then activate the integration and then continue on with this workshop. 
+    - If you wait for more than 72 hours and you haven't been notified that the request was successful, please reach out to workshops@genesys.com with your org ID and region. 
 
 
-Si desea ver un vídeo sobre estos pasos, siga este enlace: https://youtu.be/u-M6HkNf758
+If you wish to watch a video of these steps, follow this link: https://youtu.be/u-M6HkNf758

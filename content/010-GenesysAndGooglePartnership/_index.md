@@ -1,25 +1,25 @@
 ---
-title: "El partnershop de Genesys y Google Cloud"
+title: "The Genesys and Google Cloud Partnership"
 chapter: true
 weight: 10
 ---
 
-# El partnership de Genesys y Google Cloud 
+# The Genesys and Google Cloud Partnership
 
-Aquí, en Genesys, llevamos tiempo estrechando nuestra relación con Google Cloud. Y las ofertas conjuntas que traemos se extienden mucho más allá del alcance de este taller que haremos hoy. De hecho, Genesys y Google Cloud tienen un acuerdo de co-innovación. ¿Qué significa eso exactamente? Significa que nuestras dos empresas trabajarán juntas para crear nuevos productos que ayuden a las empresas a transformarse en experiencias centradas en las personas. Nuestros esfuerzos irán evolucionando, pero estamos empezando por centrarnos en estas áreas clave:
+Here at Genesys, we have been growing our relationship with Google Cloud for some time. And the joint offerings that we bring together extend much further than the extent of this workshop that we will do today. As a matter of fact, Genesys and Google Cloud have a co-innovation agreement. What does that mean exactly? That means that our two companies will work together to create new products that will help businesses transform into people-centric experiences. Our efforts will evolve, but are starting out by looking at these key areas:
 
-- Orquestación del viaje del cliente
-- Atención al cliente automatizada con IoT y servicio al cliente integrados
-- Satisfacción predictiva del cliente utilizando Genesys con Google Cloud AI
-- Autenticación multifactor impulsada por IA con verificación de geolocalización
-- Canales conversacionales únicos desde Google Cloud Search, Google Cloud Maps y otros servicios de Google Cloud.
+- Customer journey orchestration
+- Automated customer care with integrated IoT and customer service
+- Predictive customer satisfaction using Genesys with Google Cloud AI
+- AI-driven multi-factor authentication with geolocation verification
+- Unique conversational channels from Google Cloud Search, Google Cloud Maps and other Google Cloud services
 
-Este es el futuro. Si le preocupa más lo que está ocurriendo hoy, también tenemos una buena lista para usted: 
+So that's the future. If you're more concerned with what's happening today, we've got quite a list for you there as well: 
 
-- Google Cloud TTS integrado en Genesys Architect
-- Google Cloud Dialogflow ES (es la versión anterior de Dialogflow CX)
+- Google Cloud TTS integrated into Genesys Architect
+- Google Cloud Dialogflow ES (this is the older version of Dialogflow CX)
 
-Y por supuesto, lo que estamos cubriendo hoy...
+And of course, what we are covering today...
 
 - Google Cloud Dialogflow CX
-- Genesys Agent Assist con tecnología Google Cloud CCAI
+- Genesys Agent Assist Powered by Google Cloud CCAI

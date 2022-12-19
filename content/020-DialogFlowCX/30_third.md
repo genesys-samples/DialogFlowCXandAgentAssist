@@ -1,93 +1,93 @@
 ---
-title: "Creación de un agente Dialogflow CX"
+title: "Building a Dialogflow CX Agent"
 chapter: false
 weight: 30
 ---
-## Terminología
-- Agentes - Agente es el término de Dialogflow para bot. Un agente es un módulo de comprensión del lenguaje natural que entiende los matices del lenguaje humano. Usted diseña y construye un agente Dialogflow para manejar los tipos de conversaciones requeridas para su sistema.
-- Flujos - Se utilizan para definir temas y las rutas conversacionales asociadas. Aquí hay un ejemplo de diferentes flujos que podrían ser construidos para un agente de entrega de pizza.
-Flujos de Entrega de Pizza](/images/PizzaDeliveryFlows.jpg)
-- Páginas - Las páginas están configuradas para recoger información del usuario final que es relevante para el estado conversacional representado por la página. Vea el siguiente ejemplo de diferentes páginas en azul que podrían utilizarse para un flujo de Pedido de Comida. 
-Páginas de pedidos de comida](/images/foodOrderPages.jpg)
-- Tipos de entidad y parámetros - Si está familiarizado con otros motores bot, puede que conozca el término ranuras y tipos de ranuras. Los tipos de entidad y los parámetros son esencialmente lo mismo. Los tipos de entidad controlan cómo se pueden introducir los datos de los usuarios finales. Con los tipos de entidad, muchos vienen predefinidos como la Secuencia Numérica. Los tipos de entidad que vienen predefinidos se llaman entidades del sistema y los tipos de entidad que usted crea se llaman entidades personalizadas. Por ejemplo, puede crear un tipo de entidad personalizado para los ingredientes de la pizza que sólo acepte una lista predefinida de ingredientes. Los parámetros capturan y referencian valores que han sido suministrados por el usuario final. A cada parámetro se le asigna un tipo de entidad. Por ejemplo, el parámetro número de cuenta podría tener un tipo de entidad de secuencia numérica. 
-- Formularios - Se construye un formulario para cada página y es una lista de parámetros que deben ser recogidos del usuario final para la página.
-- Intentos / Intenciones (Intents) - Un intento categoriza la intención de un usuario basándose en datos llamados frases de entrenamiento. Las frases de entrenamiento son ejemplos de frases que los usuarios finales podrían escribir o decir y que coincidirían con la intención.
-- Cumplimiento - El cumplimiento permite al agente virtual responder a las preguntas de los usuarios finales, solicitar información o finalizar una sesión. Es posible llamar a múltiples cumplimientos durante un turno.
-- Controladores de estado / State Handlers - Se utilizan para controlar la conversación creando respuestas para los usuarios finales y/o cambiando la página actual.
+## Terminology
+- Agents - Agent is Dialogflow's term for bot. An agent is a natural language understanding module that understands the nuances of human language. You design and build a Dialogflow agent to handle the types of conversations required for your system.
+- Flows - Used to define topics and the associated conversational paths. Here's an example of different flows that might be built for a pizza delivery agent.
+![Pizza Delivery Flows](/images/PizzaDeliveryFlows.jpg)
+- Pages - Pages are configured to collect information from the end user that is relevant for the conversational state represented by the page. See the below example of different pages in blue that might be used for a Food Order flow. 
+![Food Order Pages](/images/foodOrderPages.jpg)
+- Entity Types and Parameters - If you are familiar with other bot engines, you might know the term slots and slot types. Entity types and parameters are essentially the same. Entity types control how data from end users can be inputted. With entity types, many come predefined such as Number Sequence. Entity types that come predefined are called system entities and entity types that you create are called custom entities. For example, you might create a custom entity type for pizza toppings that only accepts a predefined list of topppings. Parameters capture and reference values that have been supplied by the end user. Each parameter is assigned an entity type. For example, the parameter account number might have an entity type of number sequence. 
+- Forms - A form is built for each page and it is a list of parameters that should be collected from the end user for the page.
+- Intents - An intent categorizes a users intention based on data called training phrases. Training phrases are example phrases of what end users might type or say that would match up to the intent.
+- Fulfillment - Fulfillment enables the virtual agent to respond to the end users question, query for information, or terminate a session. It is possible to call mutiple fulfillments during one turn.
+- State Handlers - Used to control the conversation by creating responses for end users and/or by transitioning the current page.
 
-Página de referencia - https://cloud.google.com/dialogflow/cx/docs/basics
+Reference page - https://cloud.google.com/dialogflow/cx/docs/basics
 
 
-## Construyendo un Agente Dialogflow CX
-Hoy vamos a construir un agente virtual para una tienda de caramelos. La tienda de dulces espera utilizar Dialogflow CX para lograr dos cosas: 1. Permitir a los clientes realizar pedidos y 2. Dar a conocer el horario de la tienda. ¡Manos a la obra! Intente seguir los pasos que se indican a continuación o vea el vídeo al final de esta página.
+## Building a Dialogflow CX Agent
+Today we're going to build a virtual agent for a candy shop. The candy shop is hoping to use Dialogflow CX to accomplish two items: 1. Allow customers to place orders & 2. Give out store hours. Let's get to work! Try to follow along with either the steps below or watch the video at the bottom of this page.
 
-- Navegue a la consola de Google Cloud CCAI y asegúrese de que está en el proyecto que creó en la sección anterior. 
+- Navigate to the Google Cloud CCAI Console & ensure that you are in the project that you created in the previous section. 
     - https://dialogflow.cloud.google.com/cx/projects
-- Si recibe este mensaje cuando accede al enlace, habilite la API.
+- If you receive this prompt when you navigate to the link, just enable the API.
 ![EnableAPI](/images/EnableAPI.jpg)
-- Cree un nuevo agente y dele un nombre descriptivo como "Candy Shop Bot".
-- La primera tarea que haremos es editar la Intención de Bienvenida por Defecto. Haga clic en el botón de inicio en el centro de la página y luego en Default Welcome Intent. En cumplimiento, vamos a eliminar las frases por defecto y añadir las nuestras; "Gracias por chatear con la tienda de caramelos. ¿En qué podemos ayudarle?" Asegúrese de hacer clic en Guardar. 
+- Create a new agent and give it a descriptive name like "Candy Shop Bot"
+- The first task we will do is edit the Default Welcome Intent. Click on the start button in the middle of the page and then on Default Welcome Intent. Under fulfillment, let's delete the default phrases and add our own; "Thanks for chatting with the candy shop. How can we help you?" Be sure to click save. 
 ![Candy Shop Hello](/images/candyShopHello.jpg)
-- Antes de pasar al siguiente paso, vamos a repasar la herramienta Agente de prueba. En la parte superior derecha, haga clic en agente de prueba. Si dice hola, ¡deberías recibir la respuesta que acabamos de crear!
-[Test Agent](/images/testAgent.jpg)
+- Before we move to the next step, let's go over the Test Agent tool. In the top right, click test agent. If you say hello, you should get back the response we just created!
+![Test Agent](/images/testAgent.jpg)
 
-Ahora vamos a crear un par de intenciones (intents) y páginas. Puede crear intents de dos maneras: desde la pestaña de gestión o en línea. Le mostraremos ambas formas. Las páginas pueden ser creadas desde la pestaña de construcción o en línea. Primero crearemos una intent desde la pestaña Gestionar y una página desde la pestaña Construir.
-- Seleccione la pestaña Gestionar > Intenciones > Crear
-- Nombre esta intención store.hours
-- Introduzca al menos 5 frases de entrenamiento. Aquí hay dos ejemplos.
-    - ¿Cuándo está abierta su tienda? 
-    - ¿Cuál es su horario?
-    - Asegúrese de pulsar Guardar después de añadir las frases de formación.
-- Vuelva a la pestaña "Crear" y haga clic en el signo + para crear una nueva página llamada "Hours" (Horas).
-- Pase el ratón por encima de la página Horas recién creada y haga clic en los 3 puntos y luego en Editar
-    - Edite el campo de cumplimiento e introduzca un texto que describa el horario de su tienda de golosinas. Por ejemplo, "Nuestra tienda está abierta de lunes a sábado de 11 a 21 horas".
-    - Asegúrese de pulsar Guardar tanto en el campo de cumplimiento como en la página. 
-- Navegue de nuevo al Flujo de Inicio Predeterminado y pulse el bloque Inicio
-    - Cree una nueva ruta y elija store.hours en el desplegable de intención y en la sección de transición elija la página Hours. 
-- Ahora vamos a crear una intención y una página utilizando la funcionalidad inline
-    - Haga clic en el bloque de inicio en Flujo de inicio predeterminado y luego en + para añadir una nueva ruta.
-    - En la lista desplegable de intent haga clic en + nuevo Intent, lo que le permitirá crear una nueva intención directamente desde aquí
+Now we are going to create a couple of intents and pages. You can create intents two ways; either from the manage tab or inline. We'll show you both ways. Pages can either be created from the build tab or inline. We will first create an intent using the manage tab and a page using the build tab.
+- Select the manage tab > intents > create
+- Name this intent store.hours
+- Enter at least 5 training phrases. Here's two examples.
+    - When is your store open? 
+    - What are your hours?
+    - Be sure to press save after adding your training phrases
+- Navigate back to the build tab and then click the + sign to create a new page named "Hours"
+- Hover over the newly created Hours page and click the 3 dots and then Edit
+    - Edit the fulfillment field and then input some text describing your candy shops store hours. For example, "Our shop is open Monday through Saturday from 11am to 9pm."
+    - Be sure to press save on both the fulfillment and the page. 
+- Navigate back to the Default Start Flow and then press the Start block
+    - Create a new route and choose store.hours from the intent drop down and under the transition section choose the Hours page. 
+- Now we are going to create an intent and a page using the inline functionality
+    - Click the start block under the Default Start Flow and then the + to add a new route
+    - In the intent drop down list click + new Intent, which will allow you to create a new intent directly from here
     ![Inline New Intent](/images/inlineNewIntent.jpg)
-        - Nombre su nueva intención “Order Candy” ("Pedir caramelos") y añada algunas frases de entrenamiento de lo que un cliente podría decir si quiere pedir caramelos. En las frases de entrenamiento, añada las siguientes frases
-            - pedir caramelos
-            - hacer un nuevo pedido
-            - quiero caramelos
-            - quiero 500 chupa-chups
-            - quiero comprar 10 caramelos de goma
-        - Observe que se crea automáticamente un parámetro al introducir las frases de entrenamiento. Google Cloud reconoce, basándose en las frases de entrenamiento introducidas, que va a necesitar reunir la cantidad de caramelos como parámetro para esta intención. Enseguida hablaremos más sobre la adición de parámetros.
+        - Name your new intent "Order Candy" and add some training phrases of what a customer might say if they want to order candy. Under training phrases, add the following sentences
+            - order some gumdrops
+            - place a new order
+            - i want candy
+            - i want 500 suckers
+            - i'd like to buy 10 jawbreakers
+        - You should notice that a parameter is automatically created when putting in your training phrases. Google Cloud is recognizing based on your inputted training phrases that you are going to need to gather the quantity of candies as a parameter for this intent. We'll get more into adding parameters here in just a little bit.
         ![Parameter Autopopulate](/images/parameterAutopopulate.jpg)
-    - Mientras seguimos editando la ruta, navegamos hasta la sección de transición y ahora vamos a crear una nueva página utilizando la funcionalidad inline. 
+    - While still editing the route, navigate down to the transition section and now let's create a new page using inline functionality. 
     ![Inline New Page](/images/inlineNewPage.jpg)
-        - nombre esta página “New Order” ("Nueva Orden") y, a continuación, guarde su ruta
-- Comprobación rápida - en este punto, su editor gráfico debería tener este aspecto. 
+        - name this page "New Order" and then save your route
+- Quick check in - at this point, your graphical editor should look like this. 
 ![Graphical Editor Check In](/images/graphicalEditorCheckIn.jpg)
 
-
-A continuación tenemos que añadir parámetros a nuestra página de Nueva Orden. Como se mencionó en las secciones de terminología, los parámetros deben ser de un tipo de entidad. Hay entidades del sistema que vienen precargadas y luego se pueden crear entidades personalizadas para tipos de datos personalizados. En nuestro escenario, recogeremos el tipo de caramelo que quieren pedir (entidad personalizada) y la cantidad de ese caramelo que quieren pedir. 
-- Primero vamos a crear el nuevo tipo de entidad personalizada para el tipo de dulce. Nuestra tienda vende 5 tipos diferentes de caramelos: jawbreakers, gumdrops, suckers, gummy bears y jelly beans.
-    - Vaya a la pestaña Gestionar > Tipos de entidad > y cree un nuevo tipo de entidad personalizado llamado candy_Types (Tipos_de_caramelos). En la sección de entidades de esta página, añada los 5 tipos de caramelos enumerados anteriormente y los sinónimos correspondientes que se le ocurran. Asegúrese de pulsar Guardar.
+Next we need to add parameters to our New Order page. As mentioned in the terminology sections, parameters must be of an entity type. There are both system entities which come preloaded and then you can create custom entities for custom types of data. In our scenario, we will gather the type of candy they want to order (custom entity) and the quantity of that candy that they want to order. 
+- First let's create the new custom entity type for the type of candy. Our store sells 5 different types of candies: jawbreakers, gumdrops, suckers, gummy bears, and jelly beans.
+    - Navigate to the manage tab > entity types > and then create a new custom entity type named candy_Types. Under the entities section on this page, add our 5 candy types listed above and any corresponding synonyms you can think of. Be sure to press save.
     ![Candy Type Entity](/images/candyTypeEntity.jpg)
-- Ahora que tenemos nuestro tipo de entidad personalizada, podemos añadir nuestros parámetros a nuestra página de New Order (Nuevo Pedido). 
-    - Navegue de nuevo a Construir y luego haga clic en la página Nuevo Pedido en el constructor gráfico. 
-    - Haga clic en el signo + para crear un nuevo parámetro.
-    - Nombre el parámetro "Candy"(Caramelo) y en el desplegable de tipo de entidad encuentre el tipo de entidad personalizada que acabamos de crear. Por último, en la sección Initial prompt fulfillment, escriba "¿Qué tipo de caramelo quiere pedir?". Después, pulse Guardar.
+- Now that we have our custom entity type, we can add our parameters to our New Order page. 
+    - Navigate back to Build and then click on the New Order page in the graphical builder. 
+    - Click the + to create a new parameter.
+    - Name the parameter "Candy" and in the entity type drop down find the custom entity type we just created. Lastly, in the Initial prompt fulfillment section, type "What type of candy do you want to order?" After that, press save.
     ![Candy Parameter](/images/candyParameter.jpg)
-    - Vuelva a pulsar el + para crear otro parámetro. Esta vez, recogeremos la cantidad que quieren pedir.
-        - Para el nombre de visualización, escriba Cantidad y para el tipo de entidad elija @sys.number. 
-        - Para el cumplimiento de la consulta inicial, escriba "¿Cuántos $session.params.Candy desea?".
-        - La variable $session.params.Candy introducirá el tipo de caramelo que nos hayan proporcionado, por ejemplo "¿Cuántos caramelos quiere?".
-Por último, crearemos una página de confirmación del pedido y pasaremos a esa página utilizando una condición que compruebe si se han rellenado todos los parámetros del nuevo pedido.
-- Primero cree una nueva página y nómbrela Confirmación de Pedido. 
-- Haga clic en la página y añada un cumplimiento de entrada que diga "¡Tendremos listo su pedido de $session.params.Quantity $session.params.Candy en dos días laborables!".
-- Vuelva a la interfaz gráfica Flujo de inicio predeterminado y haga clic en la página Nuevo pedido. 
-    - Haga clic en el signo + para añadir una nueva ruta. 
-    - Añada una condición para comprobar si $page.params.status = FINAL y, a continuación, pase a la página Confirmación de pedido si el resultado es verdadero. Asegúrese de guardar la ruta.
+    - Click the + again to create another parameter. This time, we'll gather the amount they want to order.
+        - For display name, type Quantity and for entity type choose @sys.number. 
+        - For the Initial prompt fulfillment, type "How many $session.params.Candy would you like?"
+        - The $session.params.Candy variable will plug in the previously entered Candy type that they gave us, for example "How many suckers would you like?"
+Lastly, we will create an order confirmation page and transition to that page using a condition that checks if all the New Order parameters are filled in.
+- First create a new page and name it Order Confirmation. 
+- Click on the page and add entry fulfillment that says "We'll have your order for $session.params.Quantity $session.params.Candy ready in two business days!"
+- Navigate back to the Default Start Flow graphical interface and click on the New Order page. 
+    - Click the + to add a new route. 
+    - Add a condition to check if $page.params.status = FINAL and then transition to the Order Confirmation page if this evaluates to true. Be sure to save the route.
     ![Page Params Final](/images/pageParamsFinal.jpg)
-Ya está. Su interfaz gráfica debería tener ahora este aspecto. 
+There you go! Your graphical interface should now look like this. 
 ![Graphical Interface Final](/images/graphicalInterfaceFinal.jpg)
-También podemos utilizar la herramienta de agente de pruebas. Repase esta conversación con el bot.
+We also can use the test agent tool. Go through this conversation with the bot.
 ![Final Test Agent](/images/finalTestAgent.jpg)
 
-Si su conversación ha funcionado, ¡Felicidades! Acaba de crear un bot de tienda de caramelos.
+If your conversation worked, congrats! You've just created a candy shop bot.
 
-Si desea ver un vídeo de todos los pasos anteriores, navega hasta este enlace. https://youtu.be/I103nKWivG8 
+If you wish to watch a video of all the steps above, navigate to this link. https://youtu.be/I103nKWivG8 
+

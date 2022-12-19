@@ -1,31 +1,31 @@
 ---
-title: "Cómo añadir sus artículos de conocimiento a Google Cloud Storage"
+title: "Adding Your Knowledge Articles to Google Cloud Storage"
 chapter: false
 weight: 30
 ---
 
-## ¿Qué son los artículos de conocimiento (Knowledge Articles)?
-Los Artículos de Conocimiento en el asistente del agente son en última instancia lo que se mostrará a su agente en tiempo real a medida que progresa una conversación. El contenido de sus artículos de conocimiento puede ser muy variado. Algunos artículos pueden ser descriptivos sobre una pregunta, producto o servicio común. Otros artículos pueden ser un documento paso a paso sobre un proceso que suele confundir a los agentes. Lo bueno de la integración es que estos artículos que vamos a crear aparecerán en la superficie de los agentes sin necesidad de que los busquen. La integración de Agent Assist con Google Cloud transcribirá la llamada en tiempo real y mostrará los artículos relevantes para la conversación. Empecemos.
+## What are Knowledge Articles
+Knowledge Articles in agent assist are ultimately what will be surfaced to your agent in real time as a conversation is progressing. The contents of your knowledge articles can have a wide range of contents. Some articles might be descriptive about a common question, product or service. Other articles might be a step by step document on a process that frequently trips agents up. The beauty of the integration is that these articles that we are about to create will surface to the agents without them needing to search for them. The Agent Assist with Google Cloud integration will transcribe the call in real time and surface the articles relevant to the conversation. Let's get started.
 
-Algunas notas importantes sobre la carga de los artículos de conocimiento:
-1. Hay dos tipos de documentos que se pueden añadir y utilizar para esta integración. 
-    - Documentos de conocimiento
-    - Preguntas frecuentes
-2. Los documentos de conocimiento deben ser archivos HTML 
-3. Las preguntas frecuentes (FAQ) deben ser archivos .csv y ajustarse al formato descrito en la documentación de Google Cloud enlazada aquí. https://cloud.google.com/agent-assist/docs/faq#create_a_knowledge_document
+A few important notes about uploading the knowledge articles:
+1. Their are two types of documents that can be added and used for this integration. 
+    - Knowledge documents
+    - FAQs
+2. Knowledge documents must be HTML files 
+3. FAQs must be .csv files and match the format described in the Google Cloud documentation linked here. https://cloud.google.com/agent-assist/docs/faq#create_a_knowledge_document
 
-## Descargar estos archivos
-Navegue hasta este repositorio de github y siga las instrucciones de esa página. A continuación, vuelva a este taller. 
+## Download These Files
+Navigate to this github repository and follow the directions on that page. Then return back to this workshop. 
 https://github.com/TravisC1720/KnowledgeArticlesForWorkshop 
 
-## Añadir sus artículos de conocimiento a Google Cloud Storage
-1. Navegue en su Google Cloud Platform hasta Cloud Storage.
+## Add Your Knowledge Articles to Google Cloud Cloud Storage
+1. Navigate in your Google Cloud Cloud Platform to Cloud Storage.
 ![Cloud Storage](/images/cloudStorage.jpg) 
-2. Cree un bucket con un nombre descriptivo. Opcionalmente, también puede crear una estructura de carpetas en el bucket para organizar sus archivos.
+2. Create a bucket with a descriptive name. Optionally, you can also create a folder structure in the bucket to organize your files.
 ![Create Bucket](/images/createBucket.jpg)
-3. Suba al bucket los 3 archivos HTML y el archivo CSV que descargó del repositorio de github. 
+3. Upload the 3 HTML files and the 1 CSV file that you downloaded from the github repo into the bucket. 
 ![Upload Files](/images/uploadFiles.jpg)
-4. Copie los URI de todos los documentos de conocimiento en un bloc de notas para consultarlos posteriormente
+4. Copy the URI's of all the knowledge documents into a notepad for later reference
 ![Copy URI](/images/copyURI.jpg)
 
-También puede ver un vídeo con los pasos anteriores aquí https://youtu.be/_NIJrpfH68E
+You can also watch a video of the steps above here https://youtu.be/_NIJrpfH68E

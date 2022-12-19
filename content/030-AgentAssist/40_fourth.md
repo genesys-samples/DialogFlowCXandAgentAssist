@@ -1,21 +1,21 @@
 ---
-title: "Creando una base de conocimiento"
+title: "Creating a Knowledge Base"
 chapter: false
 weight: 40
 ---
 
-## Creando una base de conocimiento (Knowledge Base)
+## Creating a Knowledge Base
 
-Ahora que tenemos nuestros archivos HTML alojados en Google Cloud Cloud Storage, ya podemos crear nuestra base de conocimientos en la Consola de Ayuda del Agente de Google Cloud. Siga los siguientes pasos: 
+Now that we have our HTML files hosted in Google Cloud Cloud Storage, now we can create our knowledge base in the Google Cloud Cloud Agent Assist Console. Follow the steps below: 
 
-1. Navegue a la consola de Agent Assist y elija su proyecto. https://agentassist.cloud.google.com/projects
-2. Haga clic en datos y luego en base de conocimientos y cree una nueva base de conocimientos. Nombre la base de conocimiento con algo descriptivo como "Candy Shop".
+1. Navigate to the Agent Assist console and choose your project. https://agentassist.cloud.google.com/projects
+2. Click on data and then knowledge base and create a new knowledge base. Name the knowledge base something descriptive such as "Candy Shop"
 ![Knowledge Bases](/images/knowledgeBases.jpg)
-3. Navegue en su base de conocimiento y luego haga clic en el botón Añadir nuevo para crear un nuevo artículo.
-4. Hagamos primero nuestros archivos HTML. Para estos archivos, son de tipo "Sugerencia de artículo" - "Article Suggestion"  y la fuente del archivo es "Almacenamiento en la nube" - "Cloud Storage". Después de elegir Cloud Storage, aquí es donde se pega el URI que copiamos en la sub sección anterior
-    - repita este paso para los tres archivos HTML 
+3. Navigate into your knowledge base and then click the Add new button to create a new article.
+4. Let's do our HTML files first. For these files, they are of type "Article Suggestion" and the file source is "Cloud Storage". After choosing Cloud Storage, this is now where you paste the URI that we copied in the previous sub section
+    - repeat this step for all three HTML files 
     ![Add Knowledge Article](/images/addKnowledgeArticle.jpg)
-5. Ahora vamos a cargar nuestro archivo CSV. El archivo CSV es un tipo de conocimiento de "FAQ" y una vez más utilizaremos un tipo de carga de Google Cloud Cloud Storage. Esta vez pegue el URI del archivo CSV que tiene nuestras preguntas frecuentes.
+5. Now let's upload our CSV file. The CSV file is a knowledge type of "FAQ" and we will once again use a Google Cloud Cloud Storage upload type. This time paste in the URI of the CSV file that has our FAQ's.
 
-Si quiere ver un vídeo de los pasos anteriores, clic aquí https://youtu.be/WMzIW4j6OYw . 
+If you want to watch a video of the steps above, click here https://youtu.be/WMzIW4j6OYw . 
 

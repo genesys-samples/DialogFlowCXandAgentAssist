@@ -1,13 +1,13 @@
 ---
-title: "Conclusión"
+title: "Conclusion"
 chapter: true
 weight: 90
 ---
 
-# Conclusión
+# Conclusion
 
-¡Felicidades! Ha llegado al final del taller Genesys y Google Cloud - Dialogflow CX y Genesys Agent Assist Powered by Google Cloud CCAI. 
+Congrats! You've reached the end of the Genesys and Google Cloud - Dialogflow CX and Genesys Agent Assist Powered by Google Cloud CCAI Workshop. 
 
-En este punto, usted debe entender cómo construir e integrar Dialogflow CX Agentes con Genesys Cloud CX, así como integrar y utilizar el Agent Assist con la integración de Google Cloud.
+At this point, you should understand how to build and integrate Dialogflow CX Agents with Genesys Cloud CX as well as integrate and use the Agent Assist with Google Cloud Cloud integration.
 
-Si tiene alguna pregunta sobre este taller, si se ha quedado atascado en algún punto o si desea profundizar en el tema, póngase en contacto con workshops@genesys.com.
+If you have any questions about this workshop, if you got stuck anywhere, or if you want to dive deeper into the topic then please reach out to workshops@genesys.com
