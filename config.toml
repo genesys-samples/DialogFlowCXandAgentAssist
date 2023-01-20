@@ -1,9 +1,12 @@
 baseURL = "/"
-languageCode = "en-us"
+languageCode = "en-US"
+# English is the default language
+defaultContentLanguage = "en"
+# Force to have /en/my-page and /fr/my-page routes, even for default language.
+defaultContentLanguageInSubdir= "false"
 title = "Genesys Workshops: Your_Workshop_Name"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= "false"
 uglyurls = "true"
 relativeURLs = true
 enableEmoji = true
@@ -46,18 +49,15 @@ enableEmoji = true
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
-# English is the default language
-defaultContentLanguage = "en"
-# Force to have /en/my-page and /fr/my-page routes, even for default language.
-defaultContentLanguageInSubdir= true
-
 [Languages]
 [Languages.en]
+contentDir = 'content/en-US'
 title = "Documentation for Hugo Learn Theme"
 weight = 1
 languageName = "English"
 
 [Languages.sp]
+contentDir = 'content/es-ES'
 title = "Documentación para el tema Hugo Learn"
 weight = 2
 languageName = "Español"
